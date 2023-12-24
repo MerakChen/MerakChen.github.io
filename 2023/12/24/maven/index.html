@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Fuck u Maven | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Maven入门maven官方网址  mavne简介    1 maven是什么？  &ensp;&ensp;官方介绍：Apache Maven is a software project management and comprehension tool.Based on the concept of a project object model (POM), Maven can manage a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Fuck u Maven">
+<meta property="og:url" content="http://example.com/2023/12/24/maven/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Maven入门maven官方网址  mavne简介    1 maven是什么？  &ensp;&ensp;官方介绍：Apache Maven is a software project management and comprehension tool.Based on the concept of a project object model (POM), Maven can manage a">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/image-1.png">
+<meta property="og:image" content="http://example.com/image-2.png">
+<meta property="og:image" content="http://example.com/image-4.png">
+<meta property="article:published_time" content="2023-12-24T11:07:52.856Z">
+<meta property="article:modified_time" content="2023-08-08T03:11:22.102Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/image-1.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-maven" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/12/24/maven/" class="article-date">
+  <time class="dt-published" datetime="2023-12-24T11:07:52.856Z" itemprop="datePublished">2023-12-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Fuck u Maven
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Maven入门"><a href="#Maven入门" class="headerlink" title="Maven入门"></a>Maven入门</h1><p><a target="_blank" rel="noopener" href="https://maven.apache.org/">maven官方网址</a></p>
+<ul>
+<li><h2 id="mavne简介"><a href="#mavne简介" class="headerlink" title="mavne简介"></a>mavne简介</h2></li>
+</ul>
+<hr>
+<ul>
+<li><h5 id="1-maven是什么？"><a href="#1-maven是什么？" class="headerlink" title="1 maven是什么？"></a>1 maven是什么？</h5></li>
+</ul>
+<p>&ensp;&ensp;官方介绍：Apache Maven is a software project management and comprehension tool.Based on the concept of a <strong>project object model (POM)</strong>, Maven can manage a project’s build, reporting and documentation from a central piece of information.</p>
+<p>&ensp;&ensp;maven是一个软件项目管理和理解的工具，这里的<strong>management管理</strong>就是指maven帮助我们对于jar包的添加删除管理，配置文件的管理，各个模块之间关系的管理等，<strong>comprehension理解</strong>说的就是你通过maven构建出来的项目，具有一套标准的项目框架，这样就能能更好的帮助你理解这个项目。   </p>
+<p>&ensp;&ensp;maven是基于POM：项目对象模型的，maven由java语言编写的，所以maven把它管理的项目当成一个对象来进行管理，管理对象当然就是管理对象里边的属性和行为，这里被管理的项目就通过一个pom.xml文件来告知maven需要管理这个项目的哪些东西。<br>&ensp;&ensp;然后,maven通过一个依赖管理的模块，对这个项目对象进行资源的注入（主要是jar包），以及一个生命周期的模块（由maven自带的多种插件构成）对项目对象进行编译、运行、测试、打包等操作。<br>&ensp;&ensp;资源的拉取，前面说了maven可以对项目进行资源的注入，具体是将本地（自己电脑内，安装maven时会指定仓库路径）的maven仓库里边的jar包注入到项目，而在公司开发时，许多人使用的仓库是公司的仓库，也就是私服（存储在网络的指定路径下，需要公司指定的内网访问下载）里边可能会有许多公司内部自己的jar包资源。大部分资源都来源于maven的<a target="_blank" rel="noopener" href="https://mvnrepository.com/">中央仓库</a>。但是中央仓库访问也很慢，一般是通过国内的镜像资源下载的。</p>
+<ul>
+<li><h5 id="2-为什么要用maven？"><a href="#2-为什么要用maven？" class="headerlink" title="2 为什么要用maven？"></a>2 为什么要用maven？</h5></li>
+</ul>
+<p>&ensp;&ensp;反正它就是牛，咱们都用所以你也得学会用。–具体就是解决了麻烦，统一了结构和规范，十分便于开发。    </p>
+<p>maven的作用：<strong>依赖管理—统一的项目结构—项目构建</strong></p>
+<hr>
+<ul>
+<li><h2 id="初识maven"><a href="#初识maven" class="headerlink" title="初识maven"></a>初识maven</h2></li>
+<li><h5 id="1-下载与安装"><a href="#1-下载与安装" class="headerlink" title="1 下载与安装"></a>1 下载与安装</h5></li>
+</ul>
+<p>绿色版软件：官网下载–解压–安装成功</p>
+<ul>
+<li><h5 id="2-maven目录的介绍"><a href="#2-maven目录的介绍" class="headerlink" title="2 maven目录的介绍"></a>2 maven目录的介绍</h5></li>
+</ul>
+<blockquote>
+<p>bin:maven的可运行指令文件    </p>
+</blockquote>
+<blockquote>
+<p>boot:一个jar包，maven自己的类加载器</p>
+</blockquote>
+<blockquote>
+<p>conf；配置文件，logging日志文件，settings.xml核心配置文件</p>
+</blockquote>
+<blockquote>
+<p>lib:maven运行所依赖的所以jar包</p>
+</blockquote>
+<ul>
+<li><h5 id="3-环境变量配置"><a href="#3-环境变量配置" class="headerlink" title="3 环境变量配置"></a>3 环境变量配置</h5></li>
+</ul>
+<p>由于maven依赖与java，所以运行时候需要配JAVA_HOME,以及自己的MAVEN_HOME。<br>配置完成后在cmd下输入mvn能显示运行的信息则说明maven成功安装，或者输入mvn -v能输出maven的版本。</p>
+<hr>
+<ul>
+<li><h2 id="Maven前期"><a href="#Maven前期" class="headerlink" title="Maven前期"></a>Maven前期</h2></li>
+<li><h5 id="1-maven的坐标"><a href="#1-maven的坐标" class="headerlink" title="1 maven的坐标"></a>1 maven的坐标</h5></li>
+</ul>
+<p>&ensp;&ensp;什么是maven的坐标？前面讲了，在项目中需要各种依赖的jar包资源，而这些jar包导入到maven构建的项目中就是通过坐标的方式导入的，在pom.xml中写坐标给maven用，maven就可以通过坐标自动下载这些资源，一般是先在本地仓库查找下载，再层层递进到中央仓库。    </p>
+<p>&ensp;&ensp;<strong>maven坐标的格式</strong>      </p>
+<blockquote>
+<p>groupId:&ensp;该项目隶属的组织名称&#x2F;通常域名反写<br>artifactId：项目名称&#x2F;通常模块名称<br>version：版本号<br>packaging： 打包方式</p>
+</blockquote>
+<ul>
+<li><h5 id="2-本地仓库配置"><a href="#2-本地仓库配置" class="headerlink" title="2 本地仓库配置"></a>2 本地仓库配置</h5></li>
+</ul>
+<p>自己建一个文件夹放在指定位置作为本地仓库，通过修改conf中的settings.xml中的localRepository标签为本地仓库地址即可。默认的仓库是在c盘的用户文件下的.m2文件中。</p>
+<ul>
+<li><h5 id="3-远程仓库配置"><a href="#3-远程仓库配置" class="headerlink" title="3 远程仓库配置"></a>3 远程仓库配置</h5></li>
+</ul>
+<p>默认的中央仓库的配置在lib文件夹下的pom-4.00xml文件中，其配置的是国外的服务器仓库网址，下载速度非常慢。所以我们需要进行修改，在settings.xml文件中的mirror标签内配置镜像仓库。配置如下：</p>
+<pre><code>&lt;mirror&gt;
+    &lt;!--该镜像的标识符，用于区分不同的镜像 --&gt;
+ 	&lt;id&gt;nexus-aliyun&lt;/id&gt;
+    &lt;!--对哪一个仓库进行镜像 --&gt;
+    &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+    &lt;!--镜像名称 随意--&gt;
+    &lt;name&gt;Nexus aliyun&lt;/name&gt;
+    &lt;!--镜像URL--&gt;
+    &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt;
+&lt;/mirror&gt;
+</code></pre>
+<ul>
+<li><h2 id="IDEA集成maven"><a href="#IDEA集成maven" class="headerlink" title="IDEA集成maven"></a>IDEA集成maven</h2></li>
+</ul>
+<hr>
+<ul>
+<li><h5 id="1-配置maven环境"><a href="#1-配置maven环境" class="headerlink" title="1 配置maven环境"></a>1 配置maven环境</h5></li>
+</ul>
+<p>&ensp;&ensp;idea中创建一个新的空项目，对该项目环境进行简单配置如下：</p>
+<ul>
+<li><p>第一项</p>
+<blockquote>
+<p>project Settings里边选定项目所使用的SDK(Software Development Kit：软件开发工具包)，常用的是1.8,11,17的版本。</p>
+</blockquote>
+</li>
+<li><p>第二项</p>
+<blockquote>
+<p>file -&gt; settings 搜索maven（路径为：Build、Execution、Deployement选项里边的BuildTools里边的maven），最下边可以看到三条路径修改符，Maven home path：所使用的maven路径，修改成自己的maven路径；User settings file:修改成自己maven的settings.xml文件路径；Local repository：本地仓库路径-修改成自己创建的本地仓库路径。  最后检查自己的maven runner里边的jre版本是否对应，以及Compiler中的java compiler的版本是否对应。</p>
+</blockquote>
+<p>  <em>注：以上修改只对于当前项目生效，全局生效（对以后创建的任意maven项目都生效）的话，需要close project后，在Customize -&gt; All settings里边如上修改即可</em></p>
+</li>
+<li><h5 id="2-创建maven项目的两种方式"><a href="#2-创建maven项目的两种方式" class="headerlink" title="2 创建maven项目的两种方式"></a>2 创建maven项目的两种方式</h5></li>
+</ul>
+<p>在</p>
+<ul>
+<li><p>第一种 直接创建</p>
+<blockquote>
+<p>File ——&gt; settings ——&gt;Project structure ——&gt;module -&gt;点击+号——&gt;new module<br>  在Build system 选择Maven ，检查对应的JDK版本号，Advanced Settings里边就是该module的坐标，自行更改，确认后，idea自动下载该模块所需要的插件，即可创建完毕。    
+  </p>
+</blockquote>
+</li>
+<li><p>第二项  骨架创建</p>
+<blockquote>
+<p>在点击+号，进入new module时选择 Maven Archetype，然后添加对应的Archetype，如创建java项目就是quickstart，web项目就是webapp。</p>
+</blockquote>
+</li>
+</ul>
+<p>修改项目结构：<br>&ensp;&ensp;如果项目结构缺少，课通过project structure 里边进行修改，在module选项下<br><img src="/image-1.png" alt="Alt text"><br>以上可以在各个目录下右键新增目录，并点击上边有颜色的选项进行mark标记。或者直接在项目种对模块进行右键选择mark as 对应的标记类型。</p>
+<ul>
+<li>导入maven工程<blockquote>
+<p>和其他工程导入一样，可以通过import module 进行导入，在导入时选择项目的pom文件即可一键导入整个工程。 或者直接在右侧maven面板上点击加号进行导入，也是选择pom文件一键导入。</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h2 id="Maven基础使用"><a href="#Maven基础使用" class="headerlink" title="Maven基础使用"></a>Maven基础使用</h2></li>
+<li><h3 id="1-maven依赖管理"><a href="#1-maven依赖管理" class="headerlink" title="1 maven依赖管理"></a>1 maven依赖管理</h3></li>
+</ul>
+<p>&ensp;&ensp;<strong>依赖配置</strong>：配置依赖就是通过在pom文件种添加对应依赖的坐标信息，刷新后即可将所需要的jar包添加到项目中。配置依赖也可以将项目中不同的模块进行配置，只需要配置对应的坐标即可。标签：denpendencies里边多个dependency    </p>
+<p>&ensp;&ensp;<strong>依赖传递</strong>：给一个模块进行依赖配置（使用jar包或者使用其他模块所开发的工具）时候，被使用的依赖可能会有其他依赖，这些依赖也一并给了这个项目。在项目中直接配置的为<em>直接依赖</em>，另外就是<em>间接依赖</em>。   </p>
+<p>当项目中包含多个依赖时，可能发生<strong>依赖传递的冲突</strong>（就是多个相同依赖但版本不同）：<br>优先情况：<br>1 以项目为根，直接依赖往后一级一级优先级降低，前面的覆盖后边的。<br>2 相同等级，先配置的覆盖后配置的  </p>
+<p>&ensp;&ensp;<strong>可选依赖</strong>：对外隐藏当前所依赖的资源。就是说，你给别人用的时候，可以把你自己用的东西给隐藏。<br>将坐标的optional标签中添加ture即可隐藏   </p>
+<p>&ensp;&ensp;<strong>排除依赖</strong>：你用别人的依赖的时候，如果你不想要别人依赖中依赖的其他依赖，就可以进行排除。    在依赖的坐标添加如下代码</p>
+<pre><code>&lt;exclusions&gt;
+    &lt;exclusion&gt;
+        &lt;groupId&gt;***&lt;/groupId&gt;
+        &lt;artifcatId&gt;***&lt;/artifactId&gt;
+    &lt;/exclusion&gt;
+&lt;/exclusions&gt;
+</code></pre>
+<p>&ensp;&ensp;<strong>依赖范围</strong>：对于每一个添加到项目的jar包依赖，都有一个使用范围。通过<strong>scope</strong>标签进行设定 （默认为compile）<br><img src="/image-2.png" alt="Alt text"><br>当传递过来的依赖和主依赖都配置了作用范围时，情况如下<br><img src="/image-4.png" alt="Alt text"></p>
+<ul>
+<li><h3 id="2-maven的生命周期和插件"><a href="#2-maven的生命周期和插件" class="headerlink" title="2 maven的生命周期和插件"></a>2 maven的生命周期和插件</h3></li>
+<li><h4 id="maven的三个周期"><a href="#maven的三个周期" class="headerlink" title="maven的三个周期"></a>maven的三个周期</h4><ul>
+<li><h5 id="clean生命周期"><a href="#clean生命周期" class="headerlink" title="clean生命周期"></a>clean生命周期</h5></li>
+<li><h5 id="default生命周期"><a href="#default生命周期" class="headerlink" title="default生命周期"></a>default生命周期</h5></li>
+<li><h5 id="site构建生命周期"><a href="#site构建生命周期" class="headerlink" title="site构建生命周期"></a>site构建生命周期</h5></li>
+</ul>
+<p>生命周期就是项目的各个阶段，会从前面的阶段依次执行到后边的阶段。</p>
+</li>
+<li><h4 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h4><p>  插件与生命周期内的各个阶段进行绑定从而使其执行对应的功能。<br>插件的手动添加        </p>
+<blockquote>
+<pre><code>在依赖的坐标添加如下代码
+</code></pre>
+  <build>
+      <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>  ---插件坐标
+              <artifactId>maven-source-plugin</artifactId>
+              <version>3.3.0</version>
+              <executions>
+                  <execution>
+                      <phase>generate-resources</phase> ---使用阶段
+                  </execution>
+              </executions>
+          </plugin>
+      </plugins>
+  </build></blockquote>
+</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<hr>
+<h1 id="maven高级"><a href="#maven高级" class="headerlink" title="maven高级"></a>maven高级</h1>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/12/24/maven/" data-id="clqjf174100015wt45kb25e65" data-title="Fuck u Maven" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/12/24/linux%E5%91%BD%E4%BB%A4/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">fuck the linux too</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/12/24/maven/">Fuck u Maven</a>
+          </li>
+        
+          <li>
+            <a href="/2023/12/24/linux%E5%91%BD%E4%BB%A4/">fuck the linux too</a>
+          </li>
+        
+          <li>
+            <a href="/2023/12/24/HexoUse/">Fuck u Hexo</a>
+          </li>
+        
+          <li>
+            <a href="/2023/12/24/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2023/12/23/%E6%88%91%E4%BB%AC%E7%9A%84%E7%85%A7%E7%89%87/">我们的照片</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
